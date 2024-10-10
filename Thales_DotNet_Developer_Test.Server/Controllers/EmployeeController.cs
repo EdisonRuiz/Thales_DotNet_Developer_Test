@@ -1,9 +1,5 @@
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Thales_DotNet_Developer_Test.Server.BusinessLayer;
-using Thales_DotNet_Developer_Test.Server.DataLayer;
-using Thales_DotNet_Developer_Test.Server.Models;
 
 namespace Thales_DotNet_Developer_Test.Server.Controllers
 {
@@ -11,11 +7,6 @@ namespace Thales_DotNet_Developer_Test.Server.Controllers
     [Route("api/[controller]/[action]")]
     public class EmployeeController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<EmployeeController> _logger;
 
         private readonly IEmployeeBL _employeeBL;
