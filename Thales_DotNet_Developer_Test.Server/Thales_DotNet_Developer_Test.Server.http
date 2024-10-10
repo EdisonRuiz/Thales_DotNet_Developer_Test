@@ -1,0 +1,6 @@
+@Thales_DotNet_Developer_Test.Server_HostAddress = http://localhost:5156
+
+GET {{Thales_DotNet_Developer_Test.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
